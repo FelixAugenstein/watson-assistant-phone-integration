@@ -1,0 +1,547 @@
+{
+  "intents": [
+    {
+      "intent": "what",
+      "examples": [
+        {
+          "text": "what do you do"
+        },
+        {
+          "text": "I'm not sure what to ask"
+        },
+        {
+          "text": "help"
+        },
+        {
+          "text": "what kind of questions can you answer"
+        },
+        {
+          "text": "what can I ask you"
+        }
+      ],
+      "description": "What can you do?"
+    },
+    {
+      "intent": "No",
+      "examples": [
+        {
+          "text": "Don't think so"
+        },
+        {
+          "text": "Not really"
+        },
+        {
+          "text": "Not now"
+        },
+        {
+          "text": "No thanks"
+        },
+        {
+          "text": "No"
+        },
+        {
+          "text": "Not today"
+        },
+        {
+          "text": "No right now"
+        }
+      ],
+      "description": "Negative"
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "Bye"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "See ya later"
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Finished"
+        }
+      ],
+      "description": "Goodbye"
+    },
+    {
+      "intent": "Yes",
+      "examples": [
+        {
+          "text": "Yes please"
+        },
+        {
+          "text": "Absolutely"
+        },
+        {
+          "text": "Definitely"
+        },
+        {
+          "text": "Sure"
+        },
+        {
+          "text": "Yes"
+        }
+      ],
+      "description": "Affirmative"
+    },
+    {
+      "intent": "balance",
+      "examples": [
+        {
+          "text": "What is the my balance"
+        },
+        {
+          "text": "What is my account balance"
+        },
+        {
+          "text": "What is the balance"
+        },
+        {
+          "text": "How much is in my account"
+        },
+        {
+          "text": "How much do I owe"
+        }
+      ],
+      "description": "Get balance"
+    },
+    {
+      "intent": "openinghours",
+      "examples": [
+        {
+          "text": "what are you opening house "
+        },
+        {
+          "text": "when do you close"
+        },
+        {
+          "text": "when do you shut"
+        },
+        {
+          "text": "Are you open on Sunday"
+        },
+        {
+          "text": "What times are you open"
+        },
+        {
+          "text": "What hours are you open for"
+        },
+        {
+          "text": "When are you open"
+        },
+        {
+          "text": "What are the opening hours"
+        }
+      ],
+      "description": "What are the opening hours"
+    },
+    {
+      "intent": "hello",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "good morning"
+        }
+      ],
+      "description": "Greetings"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "PIN",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "4digitPIN",
+          "patterns": [
+            "^[0-9][0-9][0-9][0-9]$",
+            "^(one|won|two|too|to|three|free|four|for|five|six|seven|eight|ate|nine|nein|zero|oh).(one|won|two|too|to|three|free|four|for|five|six|seven|eight|ate|nine|nein|zero|oh).(one|won|two|too|to|three|free|four|for|five|six|seven|eight|ate|nine|nein|zero|oh).(one|won|two|too|to|three|free|four|for|five|six|seven|eight|ate|nine|nein|zero|oh)\\s?$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "CorrectPIN",
+          "patterns": [
+            "^1234$",
+            "^one two three four\\s?$",
+            "^1234#$"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else I can help with?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is there anything else I can help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1578664134300",
+      "conditions": "true",
+      "dialog_node": "node_3_1578924469014"
+    },
+    {
+      "type": "standard",
+      "title": "Hang Up",
+      "output": {
+        "vgwAction": {
+          "command": "vgwActHangup"
+        }
+      },
+      "parent": "node_1_1578916354683",
+      "conditions": "true",
+      "dialog_node": "node_1_1578916642856"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter just four digits."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1578664234609",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1578664234609"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1578924088221",
+      "previous_sibling": "node_7_1578664605392"
+    },
+    {
+      "type": "standard",
+      "title": "Incorrect PIN",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry that is the wrong PIN - please try again."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1578664234609",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1578664234609"
+      },
+      "conditions": "@PIN:4digitPIN",
+      "dialog_node": "node_7_1578664605392",
+      "previous_sibling": "node_2_1578664479542"
+    },
+    {
+      "type": "standard",
+      "title": "Correct PIN so give the balance",
+      "output": {
+        "text": {
+          "values": [
+            "Okay. Your balance is 340 euros. I will also send this to you by text."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "The balance on your account is €340"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_8_1578664234609",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1578924469014"
+      },
+      "conditions": "@PIN:CorrectPIN",
+      "dialog_node": "node_2_1578664479542"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1578924469014",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1578916300405"
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1578924877785",
+      "previous_sibling": "node_9_1578924767010"
+    },
+    {
+      "type": "standard",
+      "title": "Yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What else do you need?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1578924469014",
+      "conditions": "#Yes",
+      "dialog_node": "node_9_1578924767010",
+      "previous_sibling": "node_4_1578924672436"
+    },
+    {
+      "type": "standard",
+      "title": "No",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1578924469014",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1578916354683"
+      },
+      "conditions": "#No",
+      "dialog_node": "node_4_1578924672436"
+    },
+    {
+      "type": "standard",
+      "title": "Balance Enquiry",
+      "output": {
+        "text": {
+          "values": [
+            "Please say or type your four digit PIN number."
+          ]
+        },
+        "vgwAction": {
+          "command": "vgwActCollectDtmf",
+          "parameters": {
+            "dtmfTermKey": "#"
+          }
+        }
+      },
+      "conditions": "#balance",
+      "dialog_node": "node_8_1578664234609",
+      "previous_sibling": "node_10_1578664134300"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't quite catch that."
+              },
+              {
+                "text": "Sorry I missed what you said. Please say it again for me."
+              },
+              {
+                "text": "Just repeat what you said for me. I didn't quite get it."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1578916354683",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello and welcome to Watson. "
+              },
+              {
+                "text": "Ask me about opening times or check your balance."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#hello",
+      "dialog_node": "node_8_1578916300405",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Capability",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ask me for your balance or about opening hours."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#what",
+      "dialog_node": "node_1_1578929404101",
+      "previous_sibling": "node_8_1578916300405"
+    },
+    {
+      "type": "standard",
+      "title": "Sign Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for calling."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#goodbye",
+      "dialog_node": "node_1_1578916354683",
+      "previous_sibling": "node_8_1578664234609"
+    },
+    {
+      "type": "standard",
+      "title": "Opening Hours",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We are open between 8am and 9pm Monday to Friday, 9am to 6pm Saturday and 9am to 1pm on Sundays."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#openinghours",
+      "dialog_node": "node_10_1578664134300",
+      "previous_sibling": "node_1_1578929404101"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. You're through to Watson. How can I help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Voice",
+  "language": "en",
+  "description": ""
+}

@@ -1,0 +1,749 @@
+{
+  "intents": [
+    {
+      "intent": "order_pizza",
+      "examples": [
+        {
+          "text": "i want to order pizza"
+        },
+        {
+          "text": "get me a pizza"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "no",
+      "examples": [
+        {
+          "text": "nope"
+        },
+        {
+          "text": "no, thank you"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "book_table",
+      "examples": [
+        {
+          "text": "Do you have openings for next Wednesday at 7?"
+        },
+        {
+          "text": "I want to reserve a table for dinner"
+        },
+        {
+          "text": "Can I reserve a table?"
+        },
+        {
+          "text": "I'd like to come in for brunch tomorrow"
+        },
+        {
+          "text": "I’d like to make a reservation"
+        },
+        {
+          "text": "Is there availability for 4 on Tuesday night?"
+        },
+        {
+          "text": "Can 3 of us get a table for lunch?"
+        }
+      ],
+      "description": "Book a table in one of the restaurants"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "customers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "business partner",
+          "synonyms": [
+            "business partners",
+            "BP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "internal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "external",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ingredient",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "mushrooms",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "oregano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cheese",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chili",
+          "synonyms": [
+            "chilli",
+            "chilis"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salami",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pineapple",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "confirmation",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "nope"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "size",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "large",
+          "synonyms": [
+            "big"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "medium",
+          "synonyms": [
+            "middle"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "small",
+          "synonyms": [
+            "little"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-person",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "locations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Main Street",
+          "synonyms": [
+            "Main"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "First Street",
+          "synonyms": [
+            "first",
+            "1st"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Which store you want to go to? First or Main?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1580745844855",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1580745844876",
+      "previous_sibling": "handler_7_1580745844876"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1580745844855",
+      "context": {
+        "locations": "@locations"
+      },
+      "conditions": "@locations",
+      "event_name": "input",
+      "dialog_node": "handler_7_1580745844876"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Ok i got $locations."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1580913744457",
+      "conditions": "@locations",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1580913774067",
+      "previous_sibling": "handler_6_1580913744462"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Where do you want to pick up your pizza? First or Main Street?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1580913744457",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1580913744462",
+      "previous_sibling": "handler_5_1580913744462"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1580913744457",
+      "context": {
+        "locations": "@locations"
+      },
+      "conditions": "@locations",
+      "event_name": "input",
+      "dialog_node": "handler_5_1580913744462"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Which size?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1580132087333",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1580132087337",
+      "previous_sibling": "handler_9_1580132087337"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1580132087333",
+      "context": {
+        "size": "@size"
+      },
+      "conditions": "@size",
+      "event_name": "input",
+      "dialog_node": "handler_9_1580132087337"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1580129667574",
+      "variable": "$locations",
+      "dialog_node": "slot_8_1580913744457",
+      "previous_sibling": "slot_2_1580132087333"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1580129667574",
+      "variable": "$size",
+      "dialog_node": "slot_2_1580132087333",
+      "previous_sibling": "slot_3_1580129673249"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1580129667574",
+      "variable": "$ingredient_checker",
+      "dialog_node": "slot_3_1580129673249"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1580745789402",
+      "variable": "$date",
+      "dialog_node": "slot_1_1580745877234",
+      "previous_sibling": "slot_2_1580745844855"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1580745789402",
+      "variable": "$time",
+      "dialog_node": "slot_8_1580745896935",
+      "previous_sibling": "slot_1_1580745877234"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1580745789402",
+      "variable": "$number",
+      "dialog_node": "slot_5_1580745917500",
+      "previous_sibling": "slot_8_1580745896935"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1580745789402",
+      "variable": "$person",
+      "dialog_node": "slot_10_1580745933162",
+      "previous_sibling": "slot_5_1580745917500"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1580745789402",
+      "variable": "$locations",
+      "dialog_node": "slot_2_1580745844855"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What day you want to come in?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1580745877234",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1580745877243",
+      "previous_sibling": "handler_8_1580745877243"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1580745877234",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_8_1580745877243"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Under which name do you want to make a reservation?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1580745933162",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1580745933169",
+      "previous_sibling": "handler_5_1580745933169"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_10_1580745933162",
+      "context": {
+        "person": "@sys-person"
+      },
+      "conditions": "@sys-person",
+      "event_name": "input",
+      "dialog_node": "handler_5_1580745933169"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which ingredients do you want?"
+              },
+              {
+                "text": "Any other ingredients?"
+              },
+              {
+                "text": "Anything else?"
+              },
+              {
+                "text": "What else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Examples: <? $all_ingredient.join(', ') ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1580129673249",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1580129673370",
+      "previous_sibling": "handler_2_1580129673370"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Okay, we got \"<? $ingredient_list.join(' and ') ?>\"."
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay, we got \"<? $ingredient_list.join(' and ') ?>\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1580129673249",
+      "context": {
+        "all_ingredient": "<? $all_ingredient.removeValue(@ingredient) ?>",
+        "ingredient_list": "<? $ingredient_list.append(@ingredient.values) ?>"
+      },
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "@ingredient",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1580133436378",
+      "previous_sibling": "handler_3_1580133041203"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Got <? @ingredient.values.join(',') ?>"
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Alright, I got <? @ingredient.values.join(' and ') ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1580129673249",
+      "context": {
+        "all_ingredient": "<? $all_ingredient.removeValue(@ingredient) ?>",
+        "ingredient_list": "@ingredient.values"
+      },
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "@ingredient && $ingredient_list.size()==0",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1580133041203",
+      "previous_sibling": "handler_3_1580129673370"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Alright, got it."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1580129673249",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "#no",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1580134454850",
+      "previous_sibling": "handler_5_1580141146097"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "You need to select at least one option."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1580129673249",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "#no && $ingredient_list.size()==0",
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1580141146097",
+      "previous_sibling": "handler_10_1580133436378"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1580129673249",
+      "context": {
+        "ingredient_checker": "@ingredient"
+      },
+      "conditions": "@ingredient",
+      "event_name": "input",
+      "dialog_node": "handler_2_1580129673370"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time did you want to arrive?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1580745896935",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1580745896939",
+      "previous_sibling": "handler_10_1580745896938"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1580745896935",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1580745896938"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many people in your party?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1580745917500",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1580745917506",
+      "previous_sibling": "handler_6_1580745917506"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1580745917500",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1580745917506"
+    },
+    {
+      "type": "frame",
+      "title": "Book a Table",
+      "output": {
+        "text": {
+          "values": [
+            "Great, I have a table of $number people, on $date at $time at our $locations store for $person."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Great, I have a table of $number people, on $date at $time at our $locations store for $person."
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "conditions": "#book_table",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1580745789402",
+      "previous_sibling": "node_8_1580129667574"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1580745789402",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Pizza Ordering",
+      "output": {
+        "text": {
+          "values": [
+            "Awesome, I'll send a $size pizza with <? $ingredient_list.join(', ') ?> to $locations."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Awesome, I'll send a $size pizza with <? $ingredient_list.join(', ') ?> to $locations."
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "conditions": "#order_pizza",
+      "dialog_node": "node_8_1580129667574",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello and welcome to the Pizza Restaurant. Do you want to order a pizza or book a table?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "all_customer": [
+          "internal",
+          "external",
+          "business partner"
+        ],
+        "customer_list": [],
+        "all_ingredient": [
+          "pineapple",
+          "chili",
+          "salami",
+          "cheese",
+          "oregano",
+          "mushrooms"
+        ],
+        "ingredient_list": []
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Pizza Skill",
+  "language": "en",
+  "description": "Multi-Selection Slots"
+}
