@@ -10,8 +10,19 @@
 
 ## Configuring the Voice Agent on the IBM Cloud
 
-<h4>1) Create the Voice Agent</h4>
+<h4>1) Create the Voice Agent & additional services</h4>
 After the login you will see your IBM Cloud Dashboard. In the upper menu bar click Catalog. In the Catalog section, search for "Voice Agent" and click on it. Select Dallas as the region and use the Lite Plan. Click "Create".
-Repeat this process to create three additional services: 1. Watson Assistant 2. Speech to Text and 3. Text to Speech. For these services select the region of your choice and the Lite Plan.
+Repeat this process to create three additional services: 
+
+1. Watson Assistant
+2. Speech to Text and
+3. Text to Speech.
+
+For these services select the region of your choice and the Lite Plan.
 
 ![Catalog Voice Agent](readme_images/catalog-voice-agent.png)
+
+<h4>2) Import json to your Watson Assistant</h4>
+Create a new Skill and choose Dialog Skill, then select Import Skill and upload either the json File or ...
+
+![Import JSON File](readme_images/import-json-skill.png)
