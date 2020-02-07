@@ -73,3 +73,27 @@ You will see the intents, entities and the dialog. To learn more about these and
 ![Twilio configure sip trunk](readme_images/twilio-configure-sip-trunk.png)
 
 ## Configuring the Voice Agent on the IBM Cloud
+
+1. In your IBM Cloud Account go to the dashboard by clicking the IBM Logo in the upper left. Go to services and click on your Voice Agent, then click create Agent.
+
+![Agent create](readme_images/agent-create.png)
+
+2. For type select `Speech+SMS`, give it a name, put in your (Twilio) phone number and SMS-Provider, user name, password and SMS-URL provide your previously generated (Twilio) Account SID, Auth Token and the Twilio API `https://api.twilio.com`.
+
+![Agent info](readme_images/agent-info.png)
+
+3. Then provide your Watson Assistant service info, such as service instance and skill name and select auto generated service credentials.
+
+![Agent Watson Assistant](readme_images/agent-watson-assistant.png)
+
+4. Select your previously created Text 2 Speech and Speech to Text instances, choose a model and speaker and select auto generated service credentials, as well.
+
+![Agent T2S S2T](readme_images/agent-t2s-s2t.png)
+
+Save your Voice Agent. Now you should be able to call your Voice Agent with your verified phone.
+
+## If you have any questions just contact me
+Felix Augenstein<br>
+Digital Tech Ecosystem & Developer Representative @IBM<br>
+Twitter: [@F_Augenstein](https://twitter.com/F_Augenstein)<br>
+LinkedIn: [linkedin.com/in/felixaugenstein](https://www.linkedin.com/in/felixaugenstein/)
