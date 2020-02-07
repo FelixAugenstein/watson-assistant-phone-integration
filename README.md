@@ -23,6 +23,7 @@ For these services select the region of your choice and the Lite Plan.
 ![Catalog Voice Agent](readme_images/catalog-voice-agent.png)
 
 <h4>2) Import json to your Watson Assistant</h4>
-Create a new Skill and choose Dialog Skill, then select Import Skill and upload either the skill-banking-balance-enquiry.json or the skill-pizza-order-book-table.json. You will see the intents, entities and the dialog. To learn more about these and the Watson Assistant click <a href="">here</a>.
+Create a new Skill and choose Dialog Skill, then select Import Skill and upload either the skill-banking-balance-enquiry.json or the skill-pizza-order-book-table.json. You will see the intents, entities and the dialog. To learn more about these and the Watson Assistant click <a href="https://github.com/FelixAugenstein/digital-tech-tutorial-watson-assistant">here</a>.
+
 
 ![Import JSON File](readme_images/import-json-skill.png)
