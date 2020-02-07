@@ -23,7 +23,7 @@ For these services select the region of your choice and the Lite Plan.
 ![Catalog Voice Agent](readme_images/catalog-voice-agent.png)
 
 <h4>2) Import json to your Watson Assistant</h4>
-Create a new Skill and choose Dialog Skill, then select Import Skill and upload either the 
+Click on the IBM Cloud logo in the upper left to get back to your dashboard. Then click services to select your Watson Assistant service and launch it. Create a new Skill and choose Dialog Skill, then select Import Skill and upload either the 
 
 - skill-banking-balance-enquiry.json or the 
 - skill-pizza-order-book-table.json. 
@@ -34,7 +34,7 @@ You will see the intents, entities and the dialog. To learn more about these and
 
 ## Configuring the Twilio Account
 
-1. Register for [Twilio](https://www.twilio.com/) and Start free Trial 
+1. Register for [Twilio](https://www.twilio.com/) and Start a free Trial.
 2. Confirm your email.
 3. Verify your phone number. Therefore, use the phone number you will use to call the Watson Voice Agent later on. You will receive a verification code.
 
@@ -78,7 +78,7 @@ You will see the intents, entities and the dialog. To learn more about these and
 
 ![Agent create](readme_images/agent-create.png)
 
-2. For type select `Speech+SMS`, give it a name, put in your (Twilio) phone number and SMS-Provider, user name, password and SMS-URL provide your previously generated (Twilio) Account SID, Auth Token and the Twilio API `https://api.twilio.com`.
+2. For type select `Speech+SMS`, give it a name, put in your (Twilio) phone number and - under SMS-Provider - put in a user name, password and SMS-URL. Therefore, use your previously generated (Twilio) Account SID, Auth Token and the Twilio API `https://api.twilio.com`.
 
 ![Agent info](readme_images/agent-info.png)
 
