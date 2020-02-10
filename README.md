@@ -60,7 +60,7 @@ You will see the intents, entities and the dialog. To learn more about these and
 
 ![Twilio Origination](readme_images/twilio-origination.png)
 
-9. You can find your origination SIP URI under Getting started in your Voice Agent in the IBM Cloud, for the Location Dallas it is always the same: `sip:us-south.voiceagent.cloud.ibm.com`
+9. Now you have to switch to your IBM Cloud Account again. You can find your origination SIP URI under Getting started in your Voice Agent in the IBM Cloud, for the Location Dallas it is always the same: `sip:us-south.voiceagent.cloud.ibm.com`
 
 ![Twilio SIP URI](readme_images/twilio-sip-uri.png)
 
