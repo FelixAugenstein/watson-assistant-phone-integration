@@ -40,11 +40,11 @@ You will see the intents, entities and the dialog. To learn more about these and
 
 ![Twilio Registration](readme_images/twilio-registration.png)
 
-4. After the successful registration you can skip the intro and go directly to your dashboard, where you click “Get a trial number”, then click choose this number.
+4. After the successful registration you can skip the intro and go directly to your dashboard, where you click “Get a trial number”, then click choose this number. It is important that you choose the provided number without trying to change it.
 
 ![Twilio Number](readme_images/twilio-number.png)
 
-5. Copy and save the Account SID and Auth Token provided to you. You will need this information later on.
+5. Copy and save the Account SID and Auth Token provided to you. You will need this information later on to configure your Voice Agent on the IBM Cloud for step 2.
 
 ![Twilio SID Token](readme_images/twilio-sid-token.png)
 
@@ -64,7 +64,7 @@ You will see the intents, entities and the dialog. To learn more about these and
 
 ![Twilio SIP URI](readme_images/twilio-sip-uri.png)
 
-10. Add the Origination SIP URI, don’t change priority and weight and click Add.
+10. Now go back to your Twilio Account and add the Origination SIP URI, don’t change priority and weight and click Add.
 
 ![Twilio SIP URI add](readme_images/twilio-sip-uri-add.png)
 
