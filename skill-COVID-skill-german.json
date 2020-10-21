@@ -1,0 +1,1413 @@
+{
+  "intents": [
+    {
+      "intent": "Begrüßung",
+      "examples": [
+        {
+          "text": "Guten Abend"
+        },
+        {
+          "text": "Guten Morgen"
+        },
+        {
+          "text": "Guten Tag"
+        },
+        {
+          "text": "Hallo"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Moin"
+        },
+        {
+          "text": "Servus"
+        },
+        {
+          "text": "Tag"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Fähigkeiten",
+      "examples": [
+        {
+          "text": "Kannst du helfen?"
+        },
+        {
+          "text": "Mit was kannst du mir helfen?"
+        },
+        {
+          "text": "Über was können wir sprechen?"
+        },
+        {
+          "text": "Über was sollen wir uns unterhalten?"
+        },
+        {
+          "text": "Was kannst du?"
+        },
+        {
+          "text": "Welche Fähigkeiten hast du?"
+        },
+        {
+          "text": "Wie kannst du mir weiterhelfen?"
+        },
+        {
+          "text": "Zu was kannst du Auskunft geben?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Infos_zu_Regelungen",
+      "examples": [
+        {
+          "text": "Gibt es aktuelle Infos, Meldungen, Nachrichten zu Coronavirus-Regelungen?"
+        },
+        {
+          "text": "Hast du Nachrichten zu Corona und Korona Regeln"
+        },
+        {
+          "text": "Ich benötige Informationen zu COVID"
+        },
+        {
+          "text": "Ich bin auf der Suche nach aktuellen Infos und Regelungen zu Korona Virus"
+        },
+        {
+          "text": "Ich brauche aktuelle Infos zu Corona"
+        },
+        {
+          "text": "Ich suche Nachrichten oder Infos zu COVID-19"
+        },
+        {
+          "text": "Im Bundesland, welche Regeln odern Regelungen gelten vor Ort?"
+        },
+        {
+          "text": "Infos oder Nachrichten zu meinem Land bzw. Bundesland"
+        },
+        {
+          "text": "Was gibt es neues zu Corona?"
+        },
+        {
+          "text": "Was gibts neues?"
+        },
+        {
+          "text": "Welche aktuellen Meldungen kannst du mir zeigen?"
+        },
+        {
+          "text": "Welche News gibt es gerade?"
+        },
+        {
+          "text": "Welche Regeln gibt es momentan in den Ländern?"
+        },
+        {
+          "text": "Wo kann ich Infos zu unterschiedlichen Regelungen in den Bundesländern finden?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Ja",
+      "examples": [
+        {
+          "text": "das passt"
+        },
+        {
+          "text": "Genau"
+        },
+        {
+          "text": "Ja"
+        },
+        {
+          "text": "Ja bitte"
+        },
+        {
+          "text": "Ja gerne"
+        },
+        {
+          "text": "Ja sehr gerne"
+        },
+        {
+          "text": "Jawohl"
+        },
+        {
+          "text": "Jep"
+        },
+        {
+          "text": "Jo"
+        },
+        {
+          "text": "Klar"
+        },
+        {
+          "text": "Korrekt"
+        },
+        {
+          "text": "Richtig"
+        },
+        {
+          "text": "Stimmt"
+        },
+        {
+          "text": "Yep"
+        },
+        {
+          "text": "Yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Nein",
+      "examples": [
+        {
+          "text": "Bitte nicht"
+        },
+        {
+          "text": "Das ist nicht korrekt"
+        },
+        {
+          "text": "Falsch"
+        },
+        {
+          "text": "Ne"
+        },
+        {
+          "text": "Nein"
+        },
+        {
+          "text": "No"
+        },
+        {
+          "text": "Nö"
+        },
+        {
+          "text": "Nope"
+        },
+        {
+          "text": "Quatsch"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Risikogebiete",
+      "examples": [
+        {
+          "text": "Ausweisung internationaler Risikogebiete durch das Auswärtige Amt, BMG und BMI"
+        },
+        {
+          "text": "Ich trete bald eine Reise an. Wo darf ich den hinreisen?"
+        },
+        {
+          "text": "In welche Gebiete, Regionen und Länder darf man noch reisen?"
+        },
+        {
+          "text": "In welchen Ländern kann ich Urlaub machen?"
+        },
+        {
+          "text": "In welchen Ländern kann man momentan nicht Urlaub machen?"
+        },
+        {
+          "text": "In welche Regionen darf man nicht reisen?"
+        },
+        {
+          "text": "Korona Risikogebiete"
+        },
+        {
+          "text": "Was sind aktuell Risikogebiete?"
+        },
+        {
+          "text": "Welche Risikogebiete wurden durch das Auswärtige Amt festgelegt?"
+        },
+        {
+          "text": "Welche sind die Corona Risikogebiete?"
+        },
+        {
+          "text": "Wo ist der Urlaub noch erlaubt?"
+        },
+        {
+          "text": "Wo kann ich in Zeiten von Corona oder COVID Urlaub machen?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Schutzmaßnahmen",
+      "examples": [
+        {
+          "text": "Helfen die Corona App und Lüften auch zum Schutz?"
+        },
+        {
+          "text": "Hilft Abstand halten, auf Hygiene achten und – da wo es eng wird – eine Alltags-Maske tragen gegen Corona oder Covid?"
+        },
+        {
+          "text": "Kannst du mir geignete Schutzmaßnahmen zur Prävention von Corona nennen?"
+        },
+        {
+          "text": "Schutz vor Korona"
+        },
+        {
+          "text": "Was kann man gegen Corona oder COVID tun?"
+        },
+        {
+          "text": "Was sind geeignete Mittel zur Prävention für den Coronavirus?"
+        },
+        {
+          "text": "Was sind Schutzmaßnahmen gegen COVID oder Corona?"
+        },
+        {
+          "text": "Welche Maßnahmen gibt es zum Schutz vor dem Coronavirus?"
+        },
+        {
+          "text": "Welche Maßnahmen helfen damit ich kein Corona-Virus oder COVID bekomme?"
+        },
+        {
+          "text": "Wie kann ich meine Familie vor dem Virus beschützen?"
+        },
+        {
+          "text": "Wie kann ich mich verhalten, dass ich kein Corona oder COVID bekomme?"
+        },
+        {
+          "text": "Wie kann ich mich vor Corona schützen?"
+        },
+        {
+          "text": "Wie lautet die AHA Formel gegen Corona?"
+        },
+        {
+          "text": "Wie vermeide ich die Krankheit?"
+        },
+        {
+          "text": "Wie vermeide ich eine Infektion?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Symptome",
+      "examples": [
+        {
+          "text": "Bin ich infiziert wenn ich Halsschmerzen, Atemnot, Kopf- und Gliederschmerzen habe?"
+        },
+        {
+          "text": "Bin ich krank?"
+        },
+        {
+          "text": "Bin ich mit COVID-19 infiziert?"
+        },
+        {
+          "text": "Bin ich mit dem Virus infiziert?"
+        },
+        {
+          "text": "Habe ich Coronavirus oder die COVID Erkrankung?"
+        },
+        {
+          "text": "Habe ich die Krankheit?"
+        },
+        {
+          "text": "Ich habe Atemprobleme"
+        },
+        {
+          "text": "Ich habe erhöhte Temperatur, bzw. Fieber, habe ich Corona?"
+        },
+        {
+          "text": "Ich habe Fieber und Husten, bedeutet das ich habe das Virus?"
+        },
+        {
+          "text": "Ich habe Husten, Fieber, Schnupfen, sowie Geruchs- und Geschmacksverlust"
+        },
+        {
+          "text": "Ich kann nicht mehr normal atmen, ich habe Atemnot, habe ich Corona?"
+        },
+        {
+          "text": "Korona Symptome"
+        },
+        {
+          "text": "Soll ich mich testen lassen wenn ich Husten habe?"
+        },
+        {
+          "text": "Was sind die häufigsten Symptome?"
+        },
+        {
+          "text": "Was sind Symptome von Corona-Virus oder COVID-19?"
+        },
+        {
+          "text": "Welche Symptome sind typisch für diese Erkrankung?"
+        },
+        {
+          "text": "Welche Symptome treten bei Corona auf?"
+        },
+        {
+          "text": "Wie kann man feststellen ob man mit Corona infiziert ist?"
+        },
+        {
+          "text": "Woher weiß ich ob ich erkrankt bin?"
+        },
+        {
+          "text": "Woran kann ich erkennen ob ich Corona-Virus oder COVID habe?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Tests",
+      "examples": [
+        {
+          "text": "Gibt es einen Corona oder COVID Test?"
+        },
+        {
+          "text": "Ich möchte bitte wissen wann und wo ich den Test für das Virus machen kann"
+        },
+        {
+          "text": "Ich möchte einen Test machen"
+        },
+        {
+          "text": "Ist es möglich zu prüfen ob man sich mit Corona infiziert hat?"
+        },
+        {
+          "text": "Kann ich mich auf das Virus testen lassen?"
+        },
+        {
+          "text": "Korona Test"
+        },
+        {
+          "text": "Wie kann geprüft werden ob man an Corona oder COVID erkrankt ist?"
+        },
+        {
+          "text": "Wo kann ich mich testen lassen?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Verabschiedung",
+      "examples": [
+        {
+          "text": "Auf Wiedersehen"
+        },
+        {
+          "text": "Bis bald"
+        },
+        {
+          "text": "Bis dann"
+        },
+        {
+          "text": "Ciao"
+        },
+        {
+          "text": "Danke"
+        },
+        {
+          "text": "Danke und bis bald!"
+        },
+        {
+          "text": "Super danke dir!"
+        },
+        {
+          "text": "Tschau"
+        },
+        {
+          "text": "Tschüss"
+        },
+        {
+          "text": "Vielen Dank!"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Bundesland",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Baden-Württemberg",
+          "synonyms": [
+            "Baden",
+            "Wuerttemberg",
+            "Wurttemberg",
+            "Württemberg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bayern",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Berlin",
+          "synonyms": [
+            "Hauptstadt"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Brandenburg",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bremen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hamburg",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hessen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mecklenburg-Vorpommern",
+          "synonyms": [
+            "Mecklenburg",
+            "Vorpommern"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Niedersachsen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nordrhein-Westfalen",
+          "synonyms": [
+            "Nordrhein",
+            "NRW",
+            "N R W",
+            "Westfalen"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rheinland-Pfalz",
+          "synonyms": [
+            "Pfalz",
+            "Rheinland"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Saarland",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sachsen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sachsen-Anhalt",
+          "synonyms": [
+            "Anhalt",
+            "Sachsen Anhalt"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Schleswig-Holstein",
+          "synonyms": [
+            "Holstein",
+            "Schleswig"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thüringen",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Andernfalls",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ich habe Dich nicht verstanden. Bitte formuliere Deine Aussage neu."
+              },
+              {
+                "text": "Könntest du die Aussage anders formulieren? Ich kann Fragen zu Corona beantworten."
+              },
+              {
+                "text": "Leider habe ich nicht verstanden was du meinst."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Andernfalls",
+      "previous_sibling": "node_9_1602690335084",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Für welches Bundesland suchst Du aktuelle Infos und Corona-Regelungen?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1602691207770",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1602691207841",
+      "previous_sibling": "handler_9_1602691207841"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602691207770",
+      "context": {
+        "Bundesland": "@Bundesland"
+      },
+      "conditions": "@Bundesland",
+      "event_name": "input",
+      "dialog_node": "handler_9_1602691207841"
+    },
+    {
+      "type": "standard",
+      "title": "Saarland-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://corona.saarland.de/DE/home/home_node.html. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Saarland\"",
+      "dialog_node": "node_10_1602762198849",
+      "previous_sibling": "node_9_1602762196170"
+    },
+    {
+      "type": "standard",
+      "title": "Ja SMS zu Symptomen schicken",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu den Symptomen verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den COVID-19-Symptomen findest du hier: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Steckbrief.html#doc13776792bodyText8. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_3_1602690445188",
+      "conditions": "#Ja",
+      "dialog_node": "node_10_1602765328441"
+    },
+    {
+      "type": "standard",
+      "title": "Nein keine SMS",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In Ordnung, ich sende keine SMS."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602690445188",
+      "conditions": "#Nein",
+      "dialog_node": "node_10_1602765354852",
+      "previous_sibling": "node_10_1602765328441"
+    },
+    {
+      "type": "standard",
+      "title": "Schleswig-Holstein-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://schleswig-holstein.de/DE/Landesregierung/VIII/_startseite/Artikel_2020/_Informationen_Urlauber/teaser_informationen_urlauber.html. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Schleswig-Holstein\"",
+      "dialog_node": "node_11_1602762284574",
+      "previous_sibling": "node_10_1602762198849"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ich kann Dir Infos zu aktuellen Meldungen und Corona-Regelungen in den Bundesländern weiterleiten, sowie  Infos zu Risikogebieten, Schutzmaßnahmen, Symptomen und Corona-Tests geben."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Fähigkeiten",
+      "dialog_node": "node_1_1602690193535",
+      "previous_sibling": "node_9_1602690150247"
+    },
+    {
+      "type": "frame",
+      "title": "Infos zu Corona-Regelungen in den Bundesländern",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Alles klar. Kann ich Dir die Infos und Corona-Regelungen für $Bundesland per SMS zusenden?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Infos_zu_Regelungen",
+      "dialog_node": "node_1_1602690390300",
+      "previous_sibling": "node_1_1602690193535"
+    },
+    {
+      "type": "standard",
+      "title": "Baden-Württemberg-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.baden-wuerttemberg.de/de/service/aktuelle-infos-zu-corona/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Baden-Württemberg\"",
+      "dialog_node": "node_1_1602692807641",
+      "previous_sibling": "node_4_1602692217018"
+    },
+    {
+      "type": "standard",
+      "title": "Thüringen-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.tmasgff.de/covid-19. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Thüringen\"",
+      "dialog_node": "node_12_1602762287029",
+      "previous_sibling": "node_11_1602762284574"
+    },
+    {
+      "type": "standard",
+      "title": "Nein",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In Ordnung, ich sende keine SMS."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Nein && $Bundesland",
+      "dialog_node": "node_13_1602762289267",
+      "previous_sibling": "node_12_1602762287029"
+    },
+    {
+      "type": "standard",
+      "title": "Infos zu Corona-Tests",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Testen ist essentieller Bestandteil einer umfassenden Pandemie-Bekämpfungs-Strategie: Gezieltes Testen ermöglicht eine schnelle und präzise Erfassung der Zahl und Verteilung von infizierten Personen in Deutschland. Kann ich Dir weitere Infos per SMS zusenden?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Tests",
+      "dialog_node": "node_2_1602690459541",
+      "previous_sibling": "node_3_1602690445188"
+    },
+    {
+      "type": "standard",
+      "title": "Hamburg-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.hamburg.de/coronavirus/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Hamburg\"",
+      "dialog_node": "node_2_1602692211731"
+    },
+    {
+      "type": "standard",
+      "title": "Bayern-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.stmgp.bayern.de/coronavirus/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Bayern\"",
+      "dialog_node": "node_2_1602762063538",
+      "previous_sibling": "node_1_1602692807641"
+    },
+    {
+      "type": "standard",
+      "title": "Nein keine SMS",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In Ordnung, ich sende keine SMS."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602690459541",
+      "conditions": "#Nein",
+      "dialog_node": "node_2_1602765362681",
+      "previous_sibling": "node_7_1602765358973"
+    },
+    {
+      "type": "standard",
+      "title": "Infos zu Symptomen",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Zu den im deutschen Meldesystem am häufigsten erfassten Symptomen zählen Husten, Fieber, Schnupfen, sowie Geruchs- und Geschmacksverlust. Kann ich Dir weitere Infos per SMS zusenden?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Symptome",
+      "dialog_node": "node_3_1602690445188",
+      "previous_sibling": "node_5_1602690429690"
+    },
+    {
+      "type": "standard",
+      "title": "Hessen-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://soziales.hessen.de/gesundheit/corona-hessen/gebiete-mit-erhoehtem-infektionsrisiko-und-beherbergungsverbot. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Hessen\"",
+      "dialog_node": "node_3_1602762067174",
+      "previous_sibling": "node_2_1602762063538"
+    },
+    {
+      "type": "standard",
+      "title": "Bremen-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.gesundheit.bremen.de/gesundheit/corona-32718. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Bremen\"",
+      "dialog_node": "node_4_1602692217018",
+      "previous_sibling": "node_2_1602692211731"
+    },
+    {
+      "type": "standard",
+      "title": "Mecklenburg-Vorpommern-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.regierung-mv.de/corona/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Mecklenburg-Vorpommern\"",
+      "dialog_node": "node_4_1602762069765",
+      "previous_sibling": "node_3_1602762067174"
+    },
+    {
+      "type": "standard",
+      "title": "Infos zu Schutzmaßnahmen",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Die Coronavirus-Pandemie ist nicht vorbei. Schützen können wir uns mit der AHA Formel: Abstand wahren, auf Hygiene achten und – da wo es eng wird – eine Alltagsmaske tragen. Kann ich Dir weitere Infos per SMS zusenden?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Schutzmaßnahmen",
+      "dialog_node": "node_5_1602690429690",
+      "previous_sibling": "node_6_1602690414632"
+    },
+    {
+      "type": "standard",
+      "title": "Ja SMS zu Risikogebieten schicken",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu den Risikogebieten verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Eine Übersicht der Risikogebiete findest du hier: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Risikogebiete_neu.html. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_6_1602690414632",
+      "conditions": "#Ja",
+      "dialog_node": "node_5_1602693147381"
+    },
+    {
+      "type": "standard",
+      "title": "Sachsen-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.coronavirus.sachsen.de/index.html. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Sachsen\"",
+      "dialog_node": "node_5_1602762075489",
+      "previous_sibling": "node_4_1602762069765"
+    },
+    {
+      "type": "standard",
+      "title": "Infos zu Risikogebieten",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Das Robert Koch Institut hat die aktuellen Informationen zur Ausweisung internationaler Risikogebiete durch das Auswärtige Amt zusammengefasst, kann ich Dir die Infos per SMS zusenden?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Risikogebiete",
+      "dialog_node": "node_6_1602690414632",
+      "previous_sibling": "node_1_1602690390300"
+    },
+    {
+      "type": "standard",
+      "title": "Niedersachsen-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.niedersachsen.de/Coronavirus. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Niedersachsen\"",
+      "dialog_node": "node_6_1602762188082",
+      "previous_sibling": "node_5_1602762075489"
+    },
+    {
+      "type": "standard",
+      "title": "Sachsen-Anhalt-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://ms.sachsen-anhalt.de/themen/gesundheit/aktuell/coronavirus/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Sachsen-Anhalt\"",
+      "dialog_node": "node_7_1602762190504",
+      "previous_sibling": "node_6_1602762188082"
+    },
+    {
+      "type": "standard",
+      "title": "Nein keine SMS",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In Ordnung, ich sende keine SMS."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602690414632",
+      "conditions": "#Nein",
+      "dialog_node": "node_7_1602763996314",
+      "previous_sibling": "node_5_1602693147381"
+    },
+    {
+      "type": "standard",
+      "title": "Ja SMS zu Tests schicken",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu den Tests verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den COVID-19-Tests findest du hier: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Teststrategie/Nat-Teststrat.html. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_2_1602690459541",
+      "conditions": "#Ja",
+      "dialog_node": "node_7_1602765358973"
+    },
+    {
+      "type": "standard",
+      "title": "Nordrhein-Westfalen-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://www.land.nrw/corona. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Nordrhein-Westfalen\"",
+      "dialog_node": "node_8_1602762193213",
+      "previous_sibling": "node_7_1602762190504"
+    },
+    {
+      "type": "standard",
+      "title": "Ja SMS zu Schutzmaßnahmen schicken",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu den Schutzmaßnahmen verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Die Schutzmaßnahmen und die AHA Formel findest du hier: https://www.zusammengegencorona.de/aha/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_5_1602690429690",
+      "conditions": "#Ja",
+      "dialog_node": "node_8_1602764082252"
+    },
+    {
+      "type": "standard",
+      "title": "Nein keine SMS",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In Ordnung, ich sende keine SMS."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602690429690",
+      "conditions": "#Nein",
+      "dialog_node": "node_8_1602764250365",
+      "previous_sibling": "node_8_1602764082252"
+    },
+    {
+      "type": "standard",
+      "title": "Begrüßung",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hallo, wie kann ich Dir weiterhelfen?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Begrüßung",
+      "dialog_node": "node_9_1602690150247",
+      "previous_sibling": "Willkommen"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ich freue mich sehr, wenn ich Dir helfen konnte. Ich wünsche noch einen schönen Tag! Bis bald und bleib gesund!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Verabschiedung",
+      "dialog_node": "node_9_1602690335084",
+      "previous_sibling": "node_2_1602690459541"
+    },
+    {
+      "type": "standard",
+      "title": "Rheinland-Pfalz-Node with individual JSON for SMS",
+      "output": {
+        "text": {
+          "values": [
+            "In Ordnung, ich habe die SMS mit den Infos zu $Bundesland verschickt."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Infos zu den Corona-Regelungen in $Bundesland findest du hier: https://corona.rlp.de/de/themen/quarantaeneregeln/. Viele Grüße, Deine Corona-Assistentin"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "conditions": "#Ja && $Bundesland==\"Rheinland-Pfalz\"",
+      "dialog_node": "node_9_1602762196170",
+      "previous_sibling": "node_8_1602762193213"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1602690390300",
+      "disabled": true,
+      "conditions": "@Bundesland:()",
+      "dialog_node": "response_5_1602691304198",
+      "previous_sibling": "node_13_1602762289267"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1602690390300",
+      "variable": "$Bundesland",
+      "dialog_node": "slot_2_1602691207770",
+      "previous_sibling": "response_5_1602691304198"
+    },
+    {
+      "type": "standard",
+      "title": "Willkommen",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Herzlich willkommen, ich bin die virtuelle Corona-Assistentin."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Willkommen"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Meinten Sie:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nichts von dem oben genannten"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Meinten Sie:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "COVID-skill-german",
+  "language": "de",
+  "description": ""
+}
