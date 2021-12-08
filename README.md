@@ -24,6 +24,9 @@ Go back to your IBM Cloud Dashboard by clicking the IBM Cloud Logo on the upper 
 <h4>3) Import json to your Watson Assistant</h4>
 Click on the IBM Cloud logo in the upper left to get back to your dashboard. Then click services to select your Watson Assistant service and launch it. Create a new Skill and choose Dialog Skill.
 
+
+> If you can't find the button to create a new skill, click on the profile icon in the upper right corner, and then on`Switch to classic experience`.
+
 ![Create Skill](readme_images/create-skill.png)
 
 ![Create Dialog Skill](readme_images/create-dialog-skill.png)
@@ -55,25 +58,28 @@ You will see the intents, entities and the dialog. To learn more about these and
 
 Now we need to set up our Watson Assistant phone integration to enable it as a Voice Agent.
 
-1. In your IBM Watson Assistant Dashboard go to the integrations column on the rught and click on Add integration. 
+
+Go to your IBM Watson Assistant Dashboard, create a new Assistant, and add the skill you created earlier.
+
+Now click on `Add integration` on the right Side.
 
 ![Agent create](readme_images/1_add_integration.png)
 
-2. Then choose Phone and click on Create. If haven't already started your 30 day free Plus trial, you will have to start it, because this integration is part of the Plus Trial. 
+Then choose `Phone` and click on `Create`. If haven't already started your 30 day free Plus trial, you will have to start it, because this integration is part of the Plus Trial. 
 
-    When you're done, it should like this.
+Add a Name, copy and save the SIP adress, add your Twilio Phone Number and create a `Speech to text` service, as well as a `Text to speech` service.
 
-![Agent info](readme_images/2_phone_integration.png)
+After you finished the setup, it should look like this.
 
-3. Now you have the option to name your integration and you will have to paste in your Twilio Phone number, which you created and saved earlier.
+![](./readme_images/finished_01.PNG)
 
-    Below the Text to Speech header you can also choose the voice for your voice assistant.
+Go to `Speech to Text` and switch to a language of your choosing.
 
-![Agent Watson Assistant](readme_images/3_sip_adress.png)
+![](./readme_images/finished_02.PNG)
 
-4. If you scroll down you will find the SIP trunking configuration with a SIP adress, which you will have to copy and save for the next part.
+Now repeat the last step for `Text to Speech`.
 
-    Don't forget to save the integration (upper right corner)!
+![](./readme_images/finished_03.PNG)
 
 
 
