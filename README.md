@@ -113,9 +113,3 @@ Now we go back to Twilio and connect it with the Assistant.
  
 
 Now you should be able to call your Watson Assistant with your verified phone. To train STT and TTS Custom Models you can use this [simple interface](https://medium.com/ibm-data-ai/watson-speech-services-introducing-a-simple-interface-to-train-stt-and-tts-custom-models-912618d42d9b).
-
-## If you have any questions just contact me
-Felix Augenstein<br>
-Digital Tech Ecosystem & Developer Representative @IBM<br>
-Twitter: [@F_Augenstein](https://twitter.com/F_Augenstein)<br>
-LinkedIn: [linkedin.com/in/felixaugenstein](https://www.linkedin.com/in/felixaugenstein/)
